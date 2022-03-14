@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    /*  @media screen and (max-width : 600px) {  questo codice serve per modificare la grafica in variazione
+            body{                                  dei pixel dello schermo
+                background-color : red ;
+            }
+        }*/
+
+    html,
+    body {
+      background: linear-gradient(144deg, rgba(39, 255, 0, 1) 0%, rgba(245, 132, 3, 1) 68%);
+
+    }
+
+    nav {
+      padding: 0 40px;
+
+    }
+
+    .src {
+      margin-left: 10px;
+
+      margin-right: 300px;
+    }
+
+    .srcb {
+      margin-left: 350px;
+    }
+
+
+    .blog {
+      background-color: rgb(0, 0, 0);
+      border: white solid 1px;
+      width: 100px;
+
+    }
+
+    .contact {
+      background-color: rgb(0, 0, 0);
+      border: white solid 1px;
+      width: 100px;
+
+    }
+
+    .vuoto {
+      background-color: #000000;
+      border: white solid 1px;
+      width: 1200px;
+
+    }
+
+    .default {
+      background-color: rgb(0, 0, 0);
+      border: white solid 1px;
+      width: 100px;
+
+    }
+
+
+
+
+    /* p {
+      color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+ */
+
+    .contenitore {
+      background-color: rgba(39, 255, 0, 1) 0%, rgba(245, 132, 3, 1) 68%;
+      border: solid 0 white;
+      margin: 4px;
+      height: 250px;
+      display: flex;
+      /*flex-direction: row;*/
+      justify-content: space-around;
+      align-items: top;
+    }
+
+    .btn {
+      color: #000000;
+
+
+    }
+
+
+    .footer-basic {
+      padding: 40px 0;
+      color: #000000;
+      height: 200px;
+    }
+
+    .footer-basic ul {
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .footer-basic li {
+      padding: 0 10px;
+    }
+
+    .footer-basic ul a {
+      color: inherit;
+      text-decoration: none;
+      opacity: 0.8;
+    }
+
+    .footer-basic ul a:hover {
+      opacity: 1;
+    }
+
+    .footer-basic .social {
+      text-align: center;
+      padding-bottom: 25px;
+    }
+
+    .footer-basic .social>a {
+      font-size: 24px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid rgb(0, 0, 0);
+      margin: 0 8px;
+      color: inherit;
+      opacity: 0.75;
+    }
+
+    .footer-basic .social>a:hover {
+      opacity: 0.9;
+    }
+
+    .footer-basic .copyright {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 13px;
+      color: rgb(0, 0, 0);
+      margin-bottom: 0;
+    }
+  </style>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <a class="navbar-brand" href="index.html"><img width="55px" src=".//img/d-logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/Frontend/index.html">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Frontend/Chisiamo.html">Chi Siamo?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:robertop1994@libero.it">Contact</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/Frontend/Categoria.html">Categorie</a></li>
+      </ul>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="/Frontend/img/Gaming-desk-1600x900.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/Frontend/img/Sekiro-Shadows.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/Frontend/img/Postazione-Gaming.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/Frontend/img/sekiro.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <!-- <script>
+          function openImg(imgName) {
+            var i, x;
+            x = document.getElementsByClassName("picture");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            document.getElementById(imgName).style.display = "block";
+          }
+          </script>
+          <div class="footer-basic">
+            <div>
+                <div class="social"><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i
+                            class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i
+                            class="fa fa-telegram"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">
+                            <p class="p2">Home</p>
+                        </a></li>
+                    <li class="list-inline-item"><a href="mailto:robertop1994@libero.it">
+                            <p class="p2">Contact</p>
+                        </a></li>
+                    <li class="list-inline-item"><a href="Chisiamo.html">
+                            <p class="p2">About</p>
+                        </a></li>
+                    <li class="list-inline-item"><a href="Categoria.html">
+                            <p class="p2">Shop</p>
+                        </a></li>
+                    <li class="list-inline-item"><a href="#">
+                            <p class="p2">Privacy Policy</p>
+                        </a></li>
+                </ul>
+                <p class="copyright">DaiShottv © 2018</p>
+            </div>
+        </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
